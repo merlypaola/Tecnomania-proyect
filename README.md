@@ -57,4 +57,5 @@ Tienda en línea utilizando Django de Python y PostgreSQL para la asignatura de 
 
 - Merly Paola Zambrano Bravo
 - Yanelly Doménica Arteaga Arteaga
+
   [Universidad Técnica de Manabí, Portoviejo](https://utm.edu.ec)
