@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'tecnomania.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',          # Nombre de la base de datos
+        'NAME': 'django',          # Nombre de la base de datos
         'USER': 'postgres',     # Usuario de PostgreSQL
         'PASSWORD': 'jefferson.25',   # Contraseña del usuario
         'HOST': 'localhost',
