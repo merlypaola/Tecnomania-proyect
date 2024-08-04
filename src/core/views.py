@@ -16,7 +16,6 @@ def cuenta(request):
 def registro(request):
     return render(request, "core/registro.html")
 
-
 def pago(request):
     return render(request, "core/pago.html")
 

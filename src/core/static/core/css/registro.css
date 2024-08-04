@@ -138,10 +138,12 @@ p.gender_account {
   cursor: pointer;
   text-decoration: none;
 }
-.a{
+
+a {
   text-decoration: none;
   color: white;
 }
+
 .container form .btnText {
 
   font-size: 14px;
@@ -181,6 +183,7 @@ input {
   font-size: 0, 2rem;
   color: black;
 }
+
 
 select.gender {
   width: 98%;
@@ -274,11 +277,12 @@ header nav a.activo {
 }
 
 .footer {
-    width: 100%;
-    background: rgb(51, 59, 136);
-    position: fixed; /* Mantener el footer en posición fija */
-    bottom: 0;
-    padding: 20px;
+  width: 100%;
+  background: rgb(51, 59, 136);
+  position: fixed;
+  /* Mantener el footer en posición fija */
+  bottom: 0;
+  padding: 20px;
 }
 
 
@@ -398,34 +402,35 @@ td {
   border: 1px solid #4e4b5076;
   padding: 10px;
 }
+
 .login-button {
-    align-items: center;
-    justify-content: center;
-    height: 45px;
-    max-width: 200px;
-    width: 100%;
-    border: none;
-    outline: none;
-    color: white;
-    border-radius: 5px;
-    margin: 15px 0;
-    background-color: rgb(51, 59, 136);
-    transition: all 0.3s linear;
-    cursor: pointer;
-    text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  max-width: 200px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  margin: 15px 0;
+  background-color: rgb(51, 59, 136);
+  transition: all 0.3s linear;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .login-button:hover {
-    background-color: rgb(51, 59, 136);
-    color: white;
-    text-decoration: none;
+  background-color: rgb(51, 59, 136);
+  color: white;
+  text-decoration: none;
 }
 
 .login-button a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .login-button a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }

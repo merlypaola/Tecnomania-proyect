@@ -1,134 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		{% load static %}
+    {% load static %}
 
-		<link rel="icon" href="{% static 'core/img/icono.ico' %}" />
-		<link rel="stylesheet" href="{% static 'core/css/tecnomania.css' %}" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
-			rel="stylesheet"
-		/>
+    <link rel="icon" href="{% static 'core/img/icono.ico' %}" />
+    <link rel="stylesheet" href="{% static 'core/css/tecnomania.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-		<title>Nosotros</title>
-	</head>
+    <title>Nosotros</title>
+  </head>
 
-	<body>
-		<header>
-			<div class="contenedor">
-				<h2 class="logotipo"><span>TECNO</span>MANIA</h2>
-				<nav class="navprincipal">
-					<a href="{% url 'index' %}"><b>Inicio</b></a>
-					<a href="{% url 'cuenta' %}"><i class="fas fa-user"></i>Mi cuenta</a>
-					<a href="{% url 'tecnomania' %}" class="activo">Nosotros</a>
-				</nav>
-				<div>
-					<ul>
-						<li class="submenu">
-							<img src="{% static 'core/img/car.svg' %}" alt="imagen-carrito" />
-							<div id="carrito">
-								<table id="lista-carrito">
-									<thead>
-										<tr>
-											<th>Productos</th>
-											<th>Nombre</th>
-											<th>Precio</th>
-										</tr>
-									</thead>
-									<tbody></tbody>
-								</table>
+  <body>
+    <header>
+      <div class="contenedor">
+        <h2 class="logotipo"><span>TECNO</span>MANIA</h2>
+        <nav class="navprincipal">
+          <a href="{% url 'index' %}"><b>Inicio</b></a>
+          <a href="{% url 'cuenta' %}"><i class="fas fa-user"></i>Mi cuenta</a>
+          <a href="{% url 'tecnomania' %}" class="activo">Nosotros</a>
+        </nav>
+        <div>
+          <ul>
+            <li class="submenu">
+              <img src="{% static 'core/img/car.svg' %}" alt="imagen-carrito" />
+              <div id="carrito">
+                <table id="lista-carrito">
+                  <thead>
+                    <tr>
+                      <th>Productos</th>
+                      <th>Nombre</th>
+                      <th>Precio</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
 
-								<a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
-								<a href="{% url 'pago' %}" id="Comprar-carrito" class="btn-3">Comprar</a>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</header>
+                <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                <a href="{% url 'pago' %}" id="Comprar-carrito" class="btn-3"
+                  >Comprar</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
-		<div class="content">
-			<h1 class="logo">Contacta<span>nos</span></h1>
+    <div class="content">
+      <h1 class="logo">Contác<span>tanos</span></h1>
 
-			<div class="contact-wrapper animated bounceInUp">
-				<div class="contact-form">
-					<h3>CONTACTO</h3>
-					<form action="">
-						<div class="label-float">
-							<label>Nombres:</label>
-							<input type="text" name="name" />
-						</div>
+      <div class="contact-wrapper animated bounceInUp">
+        <div class="contact-form">
+          <h3>CONTACTO</h3>
+          <form action="">
+            <div class="label-float">
+              <label>Nombres:</label>
+              <input type="text" name="name" />
+            </div>
 
-						<div class="label-float">
-							<label>Apellidos:</label>
-							<input type="email" name="lastname" />
-						</div>
+            <div class="label-float">
+              <label>Apellidos:</label>
+              <input type="email" name="lastname" />
+            </div>
 
-						<div class="label-float">
-							<label>Telefono:</label>
-							<input type="tel" name="phone" />
-						</div>
-						<div class="label-float">
-							<label>Email:</label>
-							<input type="text" name="email" />
-						</div>
+            <div class="label-float">
+              <label>Telefono:</label>
+              <input type="tel" name="phone" />
+            </div>
+            <div class="label-float">
+              <label>Email:</label>
+              <input type="text" name="email" />
+            </div>
 
-						<p class="block">
-							<label>Mensaje:</label>
-							<textarea name="message" rows="3"></textarea>
-						</p>
-						<p class="block">
-							<button>Enviar</button>
-						</p>
-					</form>
-				</div>
-				<div class="contact-info">
-					<h3>MÁS INFORMACIÓN</h3>
-					<ul>
-						<li><i class="fas fa-map-marker-alt"></i> Portoviejo, Ecuador</li>
-						<li><i class="fas fa-phone"></i> (111) 111 111 111</li>
-						<li>
-							<i class="fas fa-envelope-open-text"></i> tecnomaniasupportecu@gmail.com
-						</li>
-						<li>
-							<a href="#"><i class="fab fa-twitter"></i></a> @tecnomania_ecu
-						</li>
-						<li>
-							<a href="#"><i class="fab fa-facebook-square"></i></a> Tecnomania
-							(@tecnomania_ecu)
-						</li>
-					</ul>
-					<h3>NOSOTROS</h3>
-					<p>
-						Brindamos una amplia gama de dispositivos con el objetivo de mantener al
-						usuario contento con su compra, complementando y mejorando, la experiencia de
-						uso de los dipositivos que estan a la venta; con calidad y precios
-						competitivos
-					</p>
+            <p class="block">
+              <label>Mensaje:</label>
+              <textarea name="message" rows="3"></textarea>
+            </p>
+            <p class="block">
+              <button>Enviar</button>
+            </p>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h3>MÁS INFORMACIÓN</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Portoviejo, Ecuador</li>
+            <li><i class="fas fa-phone"></i> (111) 111 111 111</li>
+            <li>
+              <i class="fas fa-envelope-open-text"></i>
+              tecnomaniasupportecu@gmail.com
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a> @tecnomania_ecu
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-square"></i></a> Tecnomania
+              (@tecnomania_ecu)
+            </li>
+          </ul>
+          <h3>NOSOTROS</h3>
+          <p>
+            Brindamos una amplia gama de dispositivos con el objetivo de
+            mantener al usuario contento con su compra, complementando y
+            mejorando, la experiencia de uso de los dipositivos que estan a la
+            venta; con calidad y precios competitivos
+          </p>
 
-					<h3>VISÍTANOS</h3>
-					<p>www.tecnomaniaecu.com</p>
-				</div>
-			</div>
-		</div>
+          <h3>VISÍTANOS</h3>
+          <p>www.tecnomaniaecu.com</p>
+        </div>
+      </div>
+    </div>
 
-		<div class="container-footer">
-			<div class="footer">
-				<div class="copyright">
-					<p>TECNOMANIA | ZAMART</p>
-					<p>Copyright© 2023 Todos los derechos reservados</p>
-				</div>
-			</div>
-		</div>
-	</body>
+    <div class="container-footer">
+      <div class="footer">
+        <div class="copyright">
+          <p>TECNOMANIA | ZAMART</p>
+          <p>Copyright© 2023 Todos los derechos reservados</p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
